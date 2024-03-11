@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto Address Generator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .crypto-address {
+        display: none;
+        margin-top: 20px;
+    }
+    .cmail{
+        position:absolute;
+        bottom: 10%;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Enter Your Name and Email</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="text" id="email" placeholder="Your Email">
+    <button onclick="generateCryptoAddress()">Generate Crypto Address</button>
+    <div class="crypto-address" id="cryptoAddress"></div>
+</div>
+
+<div class="cmail">contact:ahjdah@fiugjk.com</div>
+
+<script>
+    function generateCryptoAddress() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+
+        if (!name || !email) {
+            alert("Please enter both name and email.");
+            return;
+        }
+
+        // Simulating crypto address generation
+        var cryptoAddress = "YourCryptoAddress1234567890"; // Replace this with your actual crypto address generation logic
+        
+        var cryptoAddressDisplay = document.getElementById('cryptoAddress');
+        cryptoAddressDisplay.textContent = "Your Crypto Address: " + cryptoAddress;
+        cryptoAddressDisplay.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

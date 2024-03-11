@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  #crypto-data {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #crypto-data div {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  /* Existing CSS styles remain unchanged */
+
+#testimonials {
+    padding: 20px;
+  }
+  
+  .testimonial {
+    margin-bottom: 20px;
+  }
+  
+  .testimonial img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+  }
+
+  .ccontact{
+    position: absolute;
+    right: 25%;
+  }
+  

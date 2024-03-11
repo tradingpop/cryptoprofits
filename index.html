@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Investment</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+    
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        #invest-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        #invest-button h2 {
+            margin: 0;
+            margin-right: 10px;
+        }
+
+        #input-form {
+            display: none;
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #invest-chart {
+            width: 65%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: 100px;
+        }
+
+        .person {
+            display: flex;
+            align-items: center;
+            justify-content: space-around; /* Center horizontally */
+            margin-bottom: 15px;
+        }
+
+        .person img {
+            border-radius: 50%;
+            width: 80px; /* Adjust the width as needed */
+            height: 80px; /* Adjust the height as needed */
+        }
+
+        .person-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center vertically */
+        }
+
+        .invested {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .earned {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        #close-btn {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .h1 {
+    font-size: 38px;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    top: 60px;
+    line-height: 1.2;
+  }
+
+  .sbutton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px; /* Making the button round */
+      overflow: hidden; /* Ensuring content doesn't overflow round border */
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  .sbutton a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+  }
+  .button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 20px; /* Making the button round */
+      overflow: hidden; 
+      position: fixed;
+      top: 10px;
+    }
+    .button a {
+      color: white;
+      text-decoration: none; /* Remove underline */
+    }
+    .ibutton {
+  background-color: rgb(15, 89, 224);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px; /* Making the button round */
+    overflow: hidden; /* Ensuring content doesn't overflow round border */
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+}
+.ibutton a {
+  color: white;
+  text-decoration: none; /* Remove underline */
+}
+
+.invest{
+    position: absolute;
+    bottom: 190px;
+    left: 1%;
+
+}
+
+.dtrade{
+    position: absolute;
+    right: 45%;
+    top: 0%;
+    color: aqua;
+}
+
+    </style>
+</head>
+<body>
+
+   
+
+    <section>
+        <header class="h1">
+            <h1>Crypto<br/> Investment <br/> And Trading</h1>
+          </header>
+    
+          <button class="button"><a href="./about.html" style="color: white;">About</a></button>
+    
+          <button class="sbutton"><a href="./signup.html" style="color: white;">Signup</a></button>
+          <button class="ibutton"><a href="./investnow.html" style="color: white;">Investnow</a></button>
+          <p class="invest"> signup before investing otherwise hard to get proper details</p>
+    
+
+        <div id="invest-chart">
+            <h2 class="dtrade">Daily Top Traders</h2>
+            <div class="person">
+                <img src="./unc1.jpeg" alt="Person 1">
+                <div class="person-info">
+                    <p>ramaS</p>
+                    <div class="invested">Invested: $5,000</div>
+                    <div class="earned">Earned: $1,000</div>
+                </div>
+            </div>
+            <div class="person">
+                <img src="./unc2.jpg" alt="Person 2">
+                <div class="person-info">
+                    <p>ramaS</p>
+                    <div class="invested">Invested: $8,000</div>
+                    <div class="earned">Earned: $2,500</div>
+                </div>
+            </div>
+            <div class="person">
+                <img src="./unc3.jpeg" alt="Person 2">
+                <div class="person-info">
+                    <p>ramaS</p>
+                    <div class="invested">Invested: $8,000</div>
+                    <div class="earned">Earned: $2,500</div>
+                </div>
+            </div>
+
+           
+            <!-- Add more person entries as needed -->
+        </div>
+    </section>
+
+    <script>
+        function toggleInvestForm() {
+            var investForm = document.getElementById("input-form");
+            investForm.style.display = investForm.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
